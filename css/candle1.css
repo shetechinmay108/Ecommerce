@@ -1,0 +1,99 @@
+@font-face {
+    font-family: mihan;
+    src: url(../css/font/Mihan.ttf);
+  }
+  * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: mihan;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .main {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+  }
+  .page1 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+  }
+ 
+  .main-section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    /* background-color: red; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-left: 3.5vw;
+    color: snow;
+  }
+  .info{
+    width: 50%;
+    min-height: 100vh;
+    /* background-color: aqua; */
+    padding: 1vw;
+  }
+  .info h3{
+    padding-bottom: 1vw;
+    font-weight: 400;
+    
+    font-size: 1.5vwvw;
+  }
+  .addToCard{
+    width: 95%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    line-height: 0.5;
+    padding-right: 2vw;
+    padding-top: 1vw;
+
+  }
+  .addToCard h3{
+    font-size: 1.2vw;
+  }
+  .addToCard i{
+    font-size: 1.5vw;
+  }
+  .info h4{
+    padding-top: 2vw;
+    font-size: 1.3vw;
+    padding-right: 3vw;
+    font-weight: 400;
+  }
+  .product{
+    width: 95%;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    line-height: 0.5;
+    padding-right: 2vw;
+    padding-top: 1vw;
+  }
+  .photos{
+    width: 50%;
+    height: 150vh;
+    background-color: rgb(255, 255, 255);
+    
+  }
+  .photos img{
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+  }
+

@@ -1,0 +1,226 @@
+@font-face {
+  font-family: mihan;
+  src: url(../css/font/Mihan.ttf);
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: mihan;
+  color: snow;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  overflow-x: hidden;
+}
+.page1 {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+  padding: 1vw;
+}
+.nav {
+  width: 100%;
+  height: 20vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-bottom: 0.5px solid silver;
+}
+.nav h2 {
+  font-size: 2vw;
+  font-weight: 400;
+  color: snow;
+}
+.payment {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pay-part2 {
+  width: 50%;
+  min-height: 100vh;
+  background-color: black;
+}
+#one {
+  margin: 1vw 0;
+  font-size: 2vw;
+  font-weight: 400;
+}
+h1 {
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 0.5vw;
+  color: black;
+}
+
+label {
+  display: block;
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+
+input[type="text"],
+input[type="tel"],
+select {
+  outline: none;
+  width: 100%;
+  padding: 1vw;
+
+  color: black;
+  font-size: 1.2vw;
+  box-sizing: border-box;
+}
+
+.half-width {
+  width: 48%;
+  display: inline-block;
+}
+
+.half-width:nth-child(2) {
+  float: right;
+}
+
+.form-container {
+  width: 50%;
+  min-height: 100vh;
+
+  margin-left: 2vw;
+  padding: 0 3vw;
+}
+#country {
+  color: black;
+}
+option {
+  background-color: snow;
+  color: black;
+}
+
+#submit {
+  width: 80%;
+  height: 8vh;
+  margin: 0.5vw 0;
+  margin-top: 1.5vw;
+
+  font-size: 1.5vw;
+  border: none;
+  color: black;
+  margin-left: 3.5vw;
+  cursor: pointer;
+}
+#submit:hover {
+  transition: 0.5s;
+  color: snow;
+  background-color: black;
+  border: 0.1vw solid white;
+}
+
+.item{
+  /* display: none; */
+  /* align-items: center; */
+  justify-content: space-between;
+  display: flex;
+  /* background-color: blue; */
+
+  padding-bottom: 2vw;
+ 
+}
+.three{
+  margin-left: 2vw;
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+#minus{
+  margin:  0vw 1vw;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3vw;
+  color: snow;
+  font-weight: 400;
+  padding: 0.5;
+  cursor: pointer;
+}
+#price{
+  margin-right: 1vw;
+}
+#pluse{
+  margin:  0vw 1vw;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3vw;
+  color: snow;
+  font-weight: 400;
+  padding: 0.5;
+  cursor: pointer;
+}
+#remove{
+  margin-right: 2vw;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3vw;
+  color: snow;
+  font-weight: 400;
+  padding: 0.5;
+  cursor: pointer;
+ 
+}
+/* .item .three h4{
+  font-size: 1.3vw;
+  font-weight: 400;
+} */
+#button{
+  width: 80%;
+  height: 8vh;
+  margin: 0.5vw 0;
+  margin-top: 3vw;
+  padding: 10px;
+  font-size: 1.5vw;
+  border: none;
+  color: black;
+  margin-left: 5.5vw;
+  cursor: pointer;
+}
+#button:hover {
+  transition: 0.5s;
+  color: snow;
+  background-color: black;
+  border: 0.1vw solid white;
+}
+#one{
+  font-size: 1.3vw;
+  font-weight: 400;
+  padding-left: 2.2vw;
+  margin-top: 1vw;
+}
+#Close{
+  cursor: pointer;
+}
+.xyz{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.total-product{
+  width: 80%;
+  display: flex;
+  /* background-color: aliceblue; */
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1vw;
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star-X</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="page1">
+        <div class="video">
+          <video
+            autoplay
+            loop
+            muted
+            src="https://www.mihanaromatics.com/cdn/shop/videos/c/vp/f7d805e1ec9c451b88103c1b7e05146f/f7d805e1ec9c451b88103c1b7e05146f.HD-720p-3.0Mbps-19831107.mp4?v=0"
+          ></video>
+        </div>
+        <div class="marquee" onclick="goToSubscr()">
+          <div class="marquee-part1">
+            <h3>
+              <i class="ri-checkbox-blank-circle-fill"></i> New subscribers
+              click here to sign Up and enjoy 40% of a Discovery Set Purches<i
+                class="ri-checkbox-blank-circle-fill"
+              ></i>
+            </h3>
+          </div>
+          <div class="marquee-part1">
+            <h3>
+              <i class="ri-checkbox-blank-circle-fill"></i>New subscribers click
+              here to sign Up and enjoy 40% of a Discovery Set Purches<i
+                class="ri-checkbox-blank-circle-fill"
+              ></i>
+            </h3>
+          </div>
+          <div class="marquee-part1">
+            <h3>
+              <i class="ri-checkbox-blank-circle-fill"></i>New subscribers click
+              here to sign Up and enjoy 40% of a Discovery Set Purches<i
+                class="ri-checkbox-blank-circle-fill"
+              ></i>
+            </h3>
+          </div>
+          <div class="marquee-part1">
+            <h3>
+              <i class="ri-checkbox-blank-circle-fill"></i>New subscribers click
+              here to sign Up and enjoy 40% of a Discovery Set Purches<i
+                class="ri-checkbox-blank-circle-fill"
+              ></i>
+            </h3>
+          </div>
+          <div class="marquee-part1">
+            <h3>
+              <i class="ri-checkbox-blank-circle-fill"></i>New subscribers click
+              here to sign Up and enjoy 40% of a Discovery Set Purches<i
+                class="ri-checkbox-blank-circle-fill"
+              ></i>
+            </h3>
+          </div>
+        </div>
+        <div class="nav">
+          <div class="logo">
+            <h3><a href="./index.html">Star-X</a></h3>
+            <h3><a href="/html/perfume/perfume.html"> Perfume</a></h3>
+            <h3><a href="/html/candle/candle.html">Candles</a></h3>
+            <h3>
+              <a href="/html/Air Fragrance/air_fragence.html">Air Fragrance</a>
+            </h3>
+          </div>
+          <div class="card">
+            <h3>card (<span id="total-products">0</span>)</h3>
+          </div>
+        </div>
+        <div class="card-section">
+          <div class="card-part1">
+            <h3>Your card</h3>
+            <h3 id="Close">Close</h3>
+          </div>
+          <div id="cart-summary"></div>
+          <!-- <div class="item"></div> -->
+          <div class="card-summary">
+            <h3>Total Price</h3>
+            <h3><span id="total-price">0.00</span></h3>
+          </div>
+          <h5 id="one">Tax included and shipping calculated at checkout</h5>
+          <button id="button" onclick="goToPay()">Checkout</button>
+        </div>
+
+        <!-- Cart Summary -->
+      </div>
+      <div class="page2">
+        <div class="image">
+          <h3>Discovery Set .20% off code W/purches</h3>
+          <img
+            src="https://www.mihanaromatics.com/cdn/shop/files/MA_DiscoverySet2021_5.jpg?v=1716543464&width=2000"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="page3">
+        <div class="images-section">
+          <div class="part1">
+            <h3>Perfume</h3>
+            <img
+              onclick="goToPerfumePage()"
+              src="https://www.mihanaromatics.com/cdn/shop/files/100ML_MAFR004.jpg?v=1698201774&width=1200"
+              alt=""
+            />
+          </div>
+          <div class="part2">
+            <h3>Candles</h3>
+            <img
+              onclick="goToCandlePage()"
+              src="https://www.mihanaromatics.com/cdn/shop/files/CANDLE_MARF004_8f83b6e0-cec4-426c-ba2b-6f4fb1beb366.jpg?v=1713616298&width=1200"
+              alt=""
+            />
+          </div>
+          <div class="part3">
+            <h3>Air Frangnce</h3>
+            <img
+              onclick="goToFragence()"
+              src="https://www.mihanaromatics.com/cdn/shop/files/AIR_MAFR002_732e5617-0afb-4948-a3b7-c713ce6cb062.jpg?v=1698299316&width=1200"
+              alt=""
+            />
+          </div>
+          <div class="part4">
+            <!-- <h3>Bundles</h3> -->
+            <img
+              src=" https://www.mihanaromatics.com/cdn/shop/files/Untitled_3.png?v=1714193775&width=1200"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="images-section2">
+          <div class="part11">
+            <h3>MASTORIESO2. Interview With Lauren Haynes</h3>
+            <img
+              src="https://www.mihanaromatics.com/cdn/shop/files/LLH_Studio_LC_-33_copy.jpg?v=1716545391&width=1200"
+              alt=""
+            />
+          </div>
+          <div class="part12">
+            <img
+              src="https://www.mihanaromatics.com/cdn/shop/files/01_77884_0062_bc2fe830-465e-4777-a9ce-cf740bfb2be9.jpg?v=1707820454&width=1200"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="images-section3">
+          <img
+            src=" https://www.mihanaromatics.com/cdn/shop/files/77887_0064.jpg?v=1699956241&width=1200"
+            alt=""
+          />
+        </div>
+        <div class="images-section4">
+          <div class="part21">
+            <img
+              src="https://www.mihanaromatics.com/cdn/shop/files/MA018-Mihan-fragrance-edit-AUG-story-1_a445cffa-2142-4fb1-946b-dac3e5e93a3c.jpg?v=1698396893&width=1000"
+              alt=""
+            />
+          </div>
+          <div class="part22">
+            <h3>Gift</h3>
+            <img
+              src=" https://www.mihanaromatics.com/cdn/shop/files/mihan-giftcard-product_detail_39656d4d-8aee-4591-a33d-f1f6705b2376.jpg?v=1698201775&width=1200"
+              alt=""
+            />
+          </div>
+          <div class="part23">
+            <img
+              src="https://www.mihanaromatics.com/cdn/shop/files/MA_SB_COLOUR-01.jpg?v=1698201776&width=1200"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="xyz">
+          <p>Total Items: <span id="total-items">0</span></p>
+          <p>Total Price: $<span id="total-price">0.00</span></p>
+          <p>Total Products Selected: <span id="total-products">0</span></p>
+        </div>
+        <div class="heading">
+          <div class="heading-part1">
+            <h3><a href="../html/perfume.html"> Perfume</a></h3>
+            <h3><a href="../html/candle.html">Candles</a></h3>
+            <h3><a href="../html/air_fragence.html">Air Fragrance</a></h3>
+            <h3><a href="../html/Bundles.HTML">Bundles</a></h3>
+            <h3>About</h3>
+            <h3>Login</h3>
+            <h3><a href="../html/Subscribe.html">Subscribe</a></h3>
+            <div class="icon">
+              <i class="ri-facebook-box-line"></i>
+              <i class="ri-instagram-line"></i>
+            </div>
+          </div>
+          <div class="heading-part2">
+            <h3>Subscribe</h3>
+            <h3>Terms & Conditions</h3>
+            <h3>Returns</h3>
+            <h3>Shipping Policy</h3>
+            <h3>Privacy Policy</h3>
+          </div>
+          <div class="heading-part3">
+            <h3>Subscribe and enjoy 40% of a Discovery set Purches</h3>
+            <div class="inout-section">
+              <input type="email" name="" placeholder=" Your Email" />
+              <h3>Subscribe</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/cart.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

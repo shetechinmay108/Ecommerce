@@ -1,0 +1,505 @@
+@font-face {
+  font-family: mihan;
+  src: url(../css/font/Mihan.ttf);
+}
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: mihan;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.main {
+  width: 100%;
+  overflow-x: hidden;
+}
+.page1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+.marquee{
+  position: relative;
+  height: 8vh;
+  display: flex;
+  background-color: black;
+  width: 100%;
+}
+.marquee-part1 h3{
+  font-size: 1.5vw;
+  font-weight: 400;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-shrink: 0;
+  color: snow;
+  
+}
+.marquee-part1{
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 3vw;
+  padding: 0 1.5vw;
+}
+.marquee-part1 i{
+  font-size: 0.5vw;
+  color: snow;
+  padding: 0vw 0.5vw;
+  padding-top: 0.5vw;
+  
+}
+.video {
+  width: 100%;
+  height: 100vh;
+   
+  position: absolute;
+}
+.video video {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.nav {
+  width: 100%;
+  height: 10vh;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  position: relative;
+  padding: 0vw 2vw;
+
+  color: snow;
+}
+
+.logo {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.logo h3 {
+  padding-left: 1.5vw;
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+.card h3 {
+  font-size: 1.5vw;
+  font-weight: 400;
+  cursor: pointer;
+}
+.nav a{
+  text-decoration: none;
+  color: snow;
+}
+.card-section{
+  width: 45%;
+  height: 100vh;
+  background-color: #1A1A1A;
+  color: snow;
+  position: absolute;
+  top: 0;
+  right: -45%;
+}
+.card-part1{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vw;
+  margin: 2vw;
+  margin-right: 2vw;
+  border-bottom: 1px solid snow;
+
+}
+.card-part1 h3{
+  font-size: 1.5vw;
+  font-weight: 400;
+  padding-right: 2vw;
+}
+.card-summary{
+  display: flex;
+  border-top: 1px solid snow;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2vw;
+  
+}
+.card-summary h3{
+  font-size: 1.5vw;
+  font-weight: 400;
+}
+
+.item{
+  /* display: none; */
+  /* align-items: center; */
+  justify-content: space-between;
+  display: flex;
+  /* background-color: blue; */
+
+  padding-bottom: 2vw;
+ 
+}
+.three{
+  margin-left: 2vw;
+  font-size: 1.3vw;
+  font-weight: 400;
+}
+#minus{
+  margin:  0vw 1vw;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3vw;
+  color: snow;
+  font-weight: 400;
+  padding: 0.5;
+  cursor: pointer;
+}
+#price{
+  margin-right: 1vw;
+}
+#pluse{
+  margin:  0vw 1vw;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3vw;
+  color: snow;
+  font-weight: 400;
+  padding: 0.5;
+  cursor: pointer;
+}
+#remove{
+  margin-right: 2vw;
+  background-color: transparent;
+  border: none;
+  font-size: 1.3vw;
+  color: snow;
+  font-weight: 400;
+  padding: 0.5;
+  cursor: pointer;
+ 
+}
+/* .item .three h4{
+  font-size: 1.3vw;
+  font-weight: 400;
+} */
+#button{
+  width: 80%;
+  height: 8vh;
+  margin: 0.5vw 0;
+  margin-top: 3vw;
+  padding: 10px;
+  font-size: 1.5vw;
+  border: none;
+  color: black;
+  margin-left: 5.5vw;
+  cursor: pointer;
+}
+#button:hover {
+  transition: 0.5s;
+  color: snow;
+  background-color: black;
+  border: 0.1vw solid white;
+}
+#one{
+  font-size: 1.3vw;
+  font-weight: 400;
+  padding-left: 2.2vw;
+  margin-top: 1vw;
+}
+.page2 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.image {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.image h3 {
+  font-weight: 400;
+  font-size: 1.5vw;
+  padding: 2vw;
+  position: absolute;
+  bottom: 0%;
+}
+.page3 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+.images-section {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+}
+.part1 {
+  width: 25%;
+  height: 70vh;
+  position: relative;
+}
+.part1 img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.part1 h3 {
+  position: absolute;
+  bottom: 0;
+  padding: 2vw;
+  font-weight: 400;
+}
+.part2 {
+  width: 25%;
+  height: 70vh;
+  position: relative;
+}
+.part2 img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.part2 h3 {
+  position: absolute;
+  bottom: 0;
+  padding: 2vw;
+  font-weight: 400;
+}
+.part3 {
+  width: 25%;
+  height: 70vh;
+  position: relative;
+}
+.part3 img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.part3 h3 {
+  position: absolute;
+  bottom: 0;
+  padding: 2vw;
+  font-weight: 400;
+}
+.part4 {
+  width: 25%;
+  height: 70vh;
+  position: relative;
+}
+.part4 img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  cursor: pointer;
+}
+.part4 h3 {
+  position: absolute;
+  bottom: 0;
+  padding: 2vw;
+  font-weight: 400;
+}
+.images-section2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.part11 {
+  width: 50%;
+  height: 100vh;
+  background-color: black;
+  position: relative;
+}
+.part11 img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.part11 h3 {
+  position: absolute;
+  bottom: 0;
+  padding: 2vw;
+  font-weight: 400;
+}
+.part12 {
+  width: 50%;
+  height: 100vh;
+  background-color: black;
+}
+.part12 img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.images-section3 {
+  width: 100%;
+  height: 100vh;
+}
+.images-section3 img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.images-section4 {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+}
+.part21 {
+  width: 33.33%;
+  height: 80vh;
+  
+}
+.part21 img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.part22 {
+  width: 33.33%;
+  height: 80vh;
+  position: relative;
+}
+.part22 img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.part22 h3 {
+  position: absolute;
+  bottom: 0;
+  padding: 2vw;
+  font-weight: 400;
+}
+.part23 {
+  width: 33.33%;
+  height: 80vh;
+}
+.part23 img {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  object-fit: cover;
+}
+.xyz{
+  position: absolute;
+  right: -50%;
+  top: 0%;
+}
+.heading {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  background-color: black;
+}
+.heading a{
+  text-decoration: none;
+  color: snow;
+}
+.heading-part1 {
+  color: white;
+  padding: 2vw;
+  width: 33.33%;
+}
+.heading-part1 h3 {
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 2vw;
+  cursor: pointer;
+}
+.icon {
+  padding-top: 2vw;
+}
+.icon i {
+  font-size: 2vw;
+  cursor: pointer;
+}
+.heading-part2 {
+  color: white;
+  padding: 2vw;
+  width: 33.33%;
+}
+.heading-part2 h3 {
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 2vw;
+  cursor: pointer;
+}
+.heading-part3 {
+  width: 100%;
+  padding: 2vw;
+  padding-left: 20vw;
+}
+.heading-part3 h3 {
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 2vw;
+  color: white;
+  cursor: pointer;
+}
+.inout-section {
+  border-bottom: 2px solid white;
+  display: flex;
+}
+.inout-section input {
+  background-color: transparent;
+  border: none;
+  border-radius: 1.5px;
+  color: white;
+  width: 50%;
+  height: 4vh;
+  outline: none;
+  font-size: 1vw;
+}
+input::placeholder {
+  color: white;
+}
+.inout-section h3 {
+  font-weight: 400;
+  color: white;
+  padding-left: 18vw;
+  font-size: 1vw;
+  line-height: 2vw;
+  cursor: pointer;
+}
+
+
+

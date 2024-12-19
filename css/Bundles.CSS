@@ -1,0 +1,257 @@
+@font-face {
+    font-family: mihan;
+    src: url(../css/font/Mihan.ttf);
+  }
+  * {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: mihan;
+  }
+  html,
+  body {
+    width: 100%;
+    height: 100%;
+  }
+  .main {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .page1 {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    /* overflow: hidden; */
+  }
+  .marquee{
+  
+    position: relative;
+    height: 8vh;
+    display: flex;
+    background-color: black;
+    width: 100%;
+  }
+  .marquee-part1 h3{
+    font-size: 1.5vw;
+    font-weight: 400;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-shrink: 0;
+    color: snow;
+    
+  }
+  .marquee-part1{
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    gap: 3vw;
+    padding: 0 1.5vw;
+  }
+  .marquee-part1 i{
+    font-size: 0.5vw;
+    color: snow;
+    padding: 0vw 0.5vw;
+    padding-top: 0.5vw;
+    
+  }
+  .nav {
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    position: relative;
+    padding: 0vw 2vw;
+    color: snow;
+    background-color: black;
+  }
+  a{
+    color: snow;
+    text-decoration: none;
+  }
+  .logo {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .logo h3 {
+    padding-left: 1.5vw;
+    font-size: 1.5vw;
+    font-weight: 400;
+  }
+  .card h3 {
+    font-size: 1.5vw;
+    font-weight: 400;
+  }
+  .image-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+  }
+ .part1{
+   position: relative;
+   width:33.33%;
+   height: 100vh;
+  }
+   .part1 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .two{
+    opacity: 0;
+  }
+  .part1:hover .two{
+    opacity: 1;
+  }
+  .part1:hover .one{
+    opacity: 0;
+  }
+  .part1 h3{
+    font-weight: 400;
+    font-size: 1.2vw;
+    padding: 2vw;
+    position: absolute;
+    bottom: 0%;
+  }
+ .part2{
+   position: relative;
+   width:33.33%;
+   height: 100vh;
+  }
+   .part2 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .two{
+    opacity: 0;
+  }
+  .part2:hover .two{
+    opacity: 1;
+  }
+  .part2:hover .one{
+    opacity: 0;
+  }
+  .part2 h3{
+    font-weight: 400;
+    font-size: 1.2vw;
+    padding: 2vw;
+    position: absolute;
+    bottom: 0%;
+  }
+ .part3{
+   position: relative;
+   width:33.33%;
+   height: 100vh;
+  }
+   .part3 img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center;
+    object-fit: cover;
+    background-size: cover;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .two{
+    opacity: 0;
+  }
+  .part3:hover .two{
+    opacity: 1;
+  }
+  .part3:hover .one{
+    opacity: 0;
+  }
+  .part3 h3{
+    font-weight: 400;
+    font-size: 1.2vw;
+    padding: 2vw;
+    position: absolute;
+    bottom: 0%;
+  }
+  .heading {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-color: black;
+  }
+  .heading-part1 {
+    color: white;
+    padding: 2vw;
+    width: 33.33%;
+  }
+  .heading-part1 h3 {
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 2vw;
+    cursor: pointer;
+  }
+  .icon {
+    padding-top: 2vw;
+  }
+  .icon i {
+    font-size: 2vw;
+    cursor: pointer;
+  }
+  .heading-part2 {
+    color: white;
+    padding: 2vw;
+    width: 33.33%;
+  }
+  .heading-part2 h3 {
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 2vw;
+    cursor: pointer;
+  }
+  .heading-part3 {
+    width: 100%;
+    padding: 2vw;
+    padding-left: 20vw;
+  }
+  .heading-part3 h3 {
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 2vw;
+    color: white;
+    cursor: pointer;
+  }
+  .inout-section {
+    border-bottom: 2px solid white;
+    display: flex;
+  }
+  .inout-section input {
+    background-color: transparent;
+    border: none;
+    border-radius: 1.5px;
+    color: white;
+    width: 50%;
+    height: 4vh;
+    outline: none;
+    font-size: 1vw;
+  }
+  input::placeholder {
+    color: white;
+  }
+  .inout-section h3 {
+    font-weight: 400;
+    color: white;
+    padding-left: 18vw;
+    font-size: 1vw;
+    line-height: 2vw;
+    cursor: pointer;
+  }
+  
