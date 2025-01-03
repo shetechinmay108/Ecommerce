@@ -20,13 +20,13 @@ body {
 }
 .page1 {
   width: 100%;
-  min-height: 100vh;
+  min-height: 150vh;
   background-color: black;
   padding: 1vw;
 }
 .nav {
   width: 100%;
-  height: 20vh;
+  height: 10vh;
   align-items: center;
   justify-content: center;
   display: flex;

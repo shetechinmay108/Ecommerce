@@ -4,29 +4,28 @@ const locoScroll = new LocomotiveScroll({
     smooth: true,
   });
   
-  // Add event listener for form submission
-  document.getElementById('contact-form').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent form default submission
   
-    // Collect form data
+  document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault();  
+    
     let parms = {
-      first_name: document.getElementById("first-name").value, // Match template variable
-      last_name: document.getElementById("last-name").value,   // Match template variable
+      first_name: document.getElementById("first-name").value,  
+      last_name: document.getElementById("last-name").value,    
       address: document.getElementById("address").value,
-      user_email: document.getElementById("email").value,      // User's email to send
+      user_email: document.getElementById("email").value, 
       apartment: document.getElementById("apartment").value,
       city: document.getElementById("city").value,
       postcode: document.getElementById("postcode").value,
-      phone: document.getElementById("phone").value            // Optional fields
+      phone: document.getElementById("phone").value             
     };
   
-    // Validate email field
+     
     if (!parms.user_email || !parms.user_email.includes("@")) {
       alert("Please provide a valid email address.");
       return;
     }
   
-    // Use EmailJS to send email
+     
     emailjs.send("service_hi5r6is", "template_5s2gkjj", parms)
       .then(function (response) {
         console.log("Success:", response);
